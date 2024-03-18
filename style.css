@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(162, 204, 235);
+}
+
+.noto-serif jp-regular {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  font-style: normal;
+}
