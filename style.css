@@ -1,9 +1,173 @@
-body {
-  background-color: rgb(162, 204, 235);
+:root {
+  --primary-color: #7b3911;
+  --secondary-color: #ffffff;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --border: 1px solid #6c63ff;
 }
 
-.noto-serif jp-regular {
-  font-family: "Noto Serif JP", serif;
+.montez-regular {
+  font-family: "Montez", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+body {
+  margin: 0;
+  margin-top: 100px;
+}
+
+.title {
+  background: rgb(238, 219, 192);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 140px;
+  font-family: "Montez", cursive;
+  color: #7b3911;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image {
+  flex: 0 0 25%;
+}
+
+p {
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.main-image {
+  max-width: 80%;
+  height: auto;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+main {
+  padding: 30px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+}
+
+.primary-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.logo-img {
+  width: 200px;
+  height: 96px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
 }
